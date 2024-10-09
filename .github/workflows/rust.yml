@@ -52,7 +52,7 @@ jobs:
         export CFLTK_BUNDLE_DIR="${PWD}/bin/lib"
       shell: bash
     - name: Build app
-      working-directory: src
+      working-directory: "."
       shell: bash
       run: |
         if [[ ${RUNNER_OS} == "Linux" ]]; then
